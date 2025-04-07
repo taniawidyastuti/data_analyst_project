@@ -104,4 +104,4 @@ WITH CTE AS(
 	WHERE dea.location IS NOT NULL
 	ORDER BY 2,3)
 
-SELECT *,(rolling_vac_num::numeric/population::numeric)*100 AS vacc_per_on_population FROM CTE);
+SELECT *,(rolling_vac_num::numeric/population::numeric)*100 AS vacc_per_on_population FROM CTE;
